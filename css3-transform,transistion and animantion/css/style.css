@@ -1,0 +1,56 @@
+#gradient {
+    background: radial-gradient(#00f 20%, rgb(255, 0, 0) 80%);
+}
+
+#translate {
+    transform: matrix(1, -0.3, 0, 1, 10, 20);
+    background: rgb(26, 255, 0);
+}
+
+#transition {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    transition: width 5s, height 1s, background-color 10s;
+}
+
+#transition:hover {
+    width: 600px;
+    height: 700px;
+    background-color: blueviolet;
+}
+
+#animation {
+    animation: colorChange 5s 5s 2;
+    /* animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-name: colorChange;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse; */
+}
+
+@keyframes colorChange {
+    from {
+        background-color: red;
+        width: 200px;
+    }
+    20% {
+        background-color: yellow;
+        width: 500px;
+    }
+    40% {
+        background-color: green;
+        width: 800px;
+    }
+    60% {
+        background-color: rgb(255, 0, 140);
+    }
+    80% {
+        background-color: indigo;
+    }
+    to {
+        background-color: blue;
+    }
+}
+    
