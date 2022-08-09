@@ -21,7 +21,7 @@
 }
 
 #animation {
-    animation: colorChange 5s 5s 2;
+    animation: colorChange 5s 5s infinite;
     /* animation-delay: 5s;
     animation-duration: 10s;
     animation-iteration-count: 3;
@@ -33,7 +33,7 @@
 @keyframes colorChange {
     from {
         background-color: red;
-        width: 200px;
+        width: 0px;
     }
     20% {
         background-color: yellow;
@@ -45,12 +45,11 @@
     }
     60% {
         background-color: rgb(255, 0, 140);
-    }
-    80% {
-        background-color: indigo;
+        width: 1000px;
     }
     to {
         background-color: blue;
+        width: max-content;
     }
 }
     
